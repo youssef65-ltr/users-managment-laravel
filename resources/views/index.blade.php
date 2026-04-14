@@ -8,16 +8,16 @@
                 <th>id</th>
                 <th>name</th>
                 <th>age</th>
-                <th>created at</th>
-                <th>updated at</th>
+                <th>actions</th>
             </tr>
         @foreach ($users as $user)   
             <tr>
                 <td>{{ $user->id }}</td>
                 <td>{{ $user->name }}</td>
                 <td>{{ $user->age }}</td>
-                <td>{{ $user->created_at }}</td>
-                <td>{{ $user->updated_at }}</td>
+                <td>
+                    <a role="button" href={{ route("users.show" , $user->id) }}>details</a>
+                </td>
             </tr>
         @endforeach    
         </table>
