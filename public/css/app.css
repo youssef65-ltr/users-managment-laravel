@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(152, 25, 25);
+    background-color: #981919;
 }
 section {
     margin: 20px 0px;
@@ -34,7 +34,7 @@ header a {
 #create_user {
     background-color: #e1dc9d;
     width: 50%;
-    padding: 10px;
+    padding: 15px;
     margin: auto;
 }
 
@@ -72,4 +72,18 @@ a:visited:not(header a) {
     background-color: #e1dc9d;
     font-weight: 600;
     padding: 20px;
+}
+
+#form_update {
+    background-color: #e1dc9d;
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+}
+
+#not_found {
+    display: flex;
+    height: 97vh;
+    justify-content: center;
+    align-items: center;
 }

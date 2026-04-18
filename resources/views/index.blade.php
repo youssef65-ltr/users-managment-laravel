@@ -17,6 +17,7 @@
                 <td>{{ $user->age }}</td>
                 <td>
                     <a role="button" href={{ route("users.show" , $user->id) }}>details</a>
+                    <a role="button" href={{ route("users.edit" , $user->id) }}>update</a>
                 </td>
             </tr>
         @endforeach    

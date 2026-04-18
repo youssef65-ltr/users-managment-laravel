@@ -51,15 +51,20 @@ class UserController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $user = User::find($id);
+        return view("edit" , ["user" => $user]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request , string $id)
     {
-        //
+        $name = $request->name ;
+        $age = $request->age ;
+        $user = User::find($id);
+        $user->update(['name' => $name , 'age' => $age]);
+        return to_route("users.edit" , $id)->with("sucssUpdate" , "user with id : $id updated successfully");
     }
 
     /**

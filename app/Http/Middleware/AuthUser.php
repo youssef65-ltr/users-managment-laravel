@@ -3,11 +3,10 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Container\Attributes\Auth;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class EnsureTokenIsValid
+class AuthUser
 {
     /**
      * Handle an incoming request.
@@ -16,7 +15,10 @@ class EnsureTokenIsValid
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (auth()->guest())
+        $c = true ;
+        if($c) {
+            redirect("/login");
+        }
         return $next($request);
     }
 }

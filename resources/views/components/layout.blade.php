@@ -16,7 +16,6 @@
     <h1>application for users management</h1>
     <header>
         <a href="/users/create">create</a>
-        <a href="/update">update</a>
         <a href="/delete">delete</a>
         <a href="/users">index</a>
     </header>
