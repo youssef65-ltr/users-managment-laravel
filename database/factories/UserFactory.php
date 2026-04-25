@@ -27,6 +27,8 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'age' => fake()->numberBetween(15 , 25),
+            'email' => fake()->email(),
+            'password' => Hash::make(fake()->password(8 , 12))
         ];
     }
 

@@ -1,12 +1,9 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\AuthUser;
-
-Route::get('/welcome/{name?}', function (?string $name = "user") {
-    return view("welcome", ["name" => $name]);
-})->where("name", "[A-Za-z]+");
 
 
 
@@ -16,7 +13,6 @@ Route::get("", function () {
 });
 
 
-Route::view("/delete", "delete");
 
 Route::name("users.")
     ->prefix("users")
@@ -28,16 +24,18 @@ Route::name("users.")
         Route::get("/{id}", [UserController::class, "show"])->name("show");
         Route::get("/{id}/edit", [UserController::class, "edit"])->name("edit");
         Route::put("/{id}", [UserController::class, "update"])->name("update");
-});
+        Route::delete("/{id}" , [UserController::class , "destroy"])->name("destroy");
+    });
 
-
+Route::get("/login" , [UserController::class , "login"] )->name("login");
+Route::post("/submitLogin" , [UserController::class , "submitLogin"])->name("submitLogin");
+Route::get("/logout" , [UserController::class , "logout"])->name("logout");
 
 
 // 404 page not found routes :
 Route::view("/404", "404");
 Route::fallback(function () {
-    return redirect("/404");
+    return redirect("/404"); 
 });
 
 
-Route::view("/login", "login");

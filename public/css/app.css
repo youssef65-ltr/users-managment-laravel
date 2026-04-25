@@ -56,12 +56,14 @@ th {
 }
 
 a:not(header a) , button , input[type = "submit"]{
+    font-size: 15px;
     color: black;
     padding: 7px 5px;
     text-decoration: none;
     background-color: darkkhaki;
     border: solid 1px black;
     font-weight: 600;
+    cursor: pointer;
 }
 
 a:visited:not(header a) {
@@ -74,7 +76,7 @@ a:visited:not(header a) {
     padding: 20px;
 }
 
-#form_update {
+#form_update , #login_form {
     background-color: #e1dc9d;
     padding: 15px;
     width: 50%;

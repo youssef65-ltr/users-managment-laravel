@@ -12,6 +12,9 @@
         <div>
             age : {{ $user->age }}
         </div>
+         <div>
+            email : {{ $user->email }}
+        </div>
         <div>
             created at : {{ $user->created_at }}
         </div>

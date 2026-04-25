@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot name="title">
-        edit - 
+        edit - {{ $user->name }}
     </x-slot>
     <form method="POST" action={{ route("users.update" , $user->id) }} id="form_update">
         @csrf
@@ -16,6 +16,14 @@
         <div>
             <label for="id">age : </label>
             <input type="text" name="age" value={{ $user->age }}>
+        </div>
+        <div>
+            <label for="email">email : </label>
+            <input type="email" id="email" name="email" value="{{ $user->email }}">
+        </div>
+        <div>
+            <label for="password">password : </label>
+            <input type="password" id="password" name="password">
         </div>
         @if (session()->has("sucssUpdate"))
             <h1 style="background-color : darkgreen">

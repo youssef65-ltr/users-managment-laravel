@@ -15,7 +15,7 @@ class AuthUser
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $c = true ;
+        $c = false ;
         if($c) {
             redirect("/login");
         }

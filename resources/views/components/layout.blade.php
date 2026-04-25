@@ -13,13 +13,20 @@
             {{ session()->get("success") }}
         </h1>
     @endif
+    
     <h1>application for users management</h1>
     <header>
         <a href="/users/create">create</a>
-        <a href="/delete">delete</a>
-        <a href="/users">index</a>
+        <a href="/users">index</a> 
+        @auth
+            <a href="/logout">logout</a>
+        @else
+            <a href="/login">login</a>
+        @endauth
     </header>
-
+    @auth
+       <h1>Welcome - {{ Auth::user()->name }}</h1> 
+    @endauth
     <section>
         {{ $slot }}
     </section>
