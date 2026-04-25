@@ -6,3 +6,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+
+## some screen shots .
+
+![image list users](https://github.com/youssef65-ltr/users-managment-laravel/blob/bf1af785f055d3afe917cacfc56ec1abd3cb8e98/Screenshot%202026-04-25%20133730.png)
+![image create new user](https://github.com/youssef65-ltr/users-managment-laravel/blob/bf1af785f055d3afe917cacfc56ec1abd3cb8e98/Screenshot%202026-04-25%20133753.png)
+![image login](https://github.com/youssef65-ltr/users-managment-laravel/blob/bf1af785f055d3afe917cacfc56ec1abd3cb8e98/Screenshot%202026-04-25%20133806.png)
+![image list users with auth after login](https://github.com/youssef65-ltr/users-managment-laravel/blob/bf1af785f055d3afe917cacfc56ec1abd3cb8e98/Screenshot%202026-04-25%20133827.png)
