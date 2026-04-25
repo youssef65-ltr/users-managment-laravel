@@ -7,7 +7,25 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## some screen shots .
+## concepts that I learnt from this project :
+
+<ul>
+    <li>how MVC works</li>
+    <li>controller resource</li>
+    <li>routing (name , prefix , grouping , middleware)</li>
+    <li>migration ORM</li>
+    <li>seeders</li>
+    <li>factories</li>
+    <li>how to config laravel project for your use</li>
+    <li>validatore</li>
+    <li>blade.php</li>
+    <li>password hashing</li>
+    <li>authontication</li>
+</ul>
+
+# I didn't integrate all of this concepts professionally but while I was learning I was add somethings to the project just for testing so the project is not professional and not taht powerful but it helps me as a new laravel learner.
+
+## some screen shots :
 
 ![image list users](https://github.com/youssef65-ltr/users-managment-laravel/blob/bf1af785f055d3afe917cacfc56ec1abd3cb8e98/Screenshot%202026-04-25%20133730.png)
 ![image create new user](https://github.com/youssef65-ltr/users-managment-laravel/blob/bf1af785f055d3afe917cacfc56ec1abd3cb8e98/Screenshot%202026-04-25%20133753.png)
