@@ -23,7 +23,7 @@
     <li>authontication</li>
 </ul>
 
-## I didn't integrate all of this concepts professionally but while I was learning I was add somethings to the project just for testing so the project is not professional and not taht powerful but it helps me as a new laravel learner.
+## I didn't integrate all of this concepts professionally but while I was learning I was add somethings to the project just for testing.
 
 # some screen shots :
 
